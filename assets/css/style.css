@@ -195,6 +195,31 @@ img {
     font-size: 24px;
 }
 
+.tech-container {
+    display: grid;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-items: center;
+}
+
+@media (min-width: 300px) {
+    .tech-container {
+        grid-template-columns:  repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .tech-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .tech-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 .tech-card {
     width: 100px;
     height: 100px;
