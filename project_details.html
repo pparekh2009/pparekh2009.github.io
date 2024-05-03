@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/aos.css">
+	<link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        #title-image {
+            height: 30vh;
+            filter: blur(4px);
+        }
+
+        #project-header {
+            color: var(--color-base);
+            padding: 10px;
+        }
+
+        .desc-container {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="position-relative overflow-hidden">
+        <img id="title-image" class="w-100 object-fit-cover">
+        <h1 id="project-header" class="position-absolute bottom-0 m-auto w-100"></h1>
+    </div>
+
+    <div class="desc-container m-4">
+        <h2>About</h2>
+        <p id="project-description"></p>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/aos.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+    <script>
+        const searchParams = new URLSearchParams(window.location.search)
+        const id = searchParams.get("id")
+        console.log(id)
+
+        let projectHeader = document.getElementById("project-header")
+        let titleImage = document.getElementById("title-image")
+        let projectDescription = document.getElementById("project-description")
+
+        fetch('./assets/projects.json')
+            .then(response => response.json())
+            .then(data => {
+                Object.entries(data).forEach(([key, value]) => {
+                    console.log("Key: " + key)
+                    console.log("Value: " + value)
+
+                    Object.entries(value).forEach(([v_key, v_value]) => {
+                        console.log("Project id: " + v_value.id)
+                        if (v_value.id == id) {
+                            console.log("Id: " + v_value.name)
+                            projectHeader.textContent = v_value.name
+                            titleImage.src = v_value.title_image
+                            projectDescription.textContent = v_value.description
+                            throw new Error("Stop Iterating!!")
+                        }
+                    })
+                })
+            })
+    </script>
+</body>
+</html>
