@@ -1,0 +1,361 @@
+{
+    "Android Projects": [
+        {
+            "id": 1,
+            "name": "Brain Tumor Detection",
+            "description": {
+                "short_desc": "Brain Tumor Detection is an Android application designed to assist users in identifying the presence of a tumor in brain X-ray images. Users can upload images from their gallery or capture them using their camera. The app utilizes a machine learning model to analyze the images and determine if a tumor is present.",
+                "features": [
+                    "Image Upload: Users can upload X-ray images from their gallery.",
+                    "Camera Capture: Users can capture X-ray images directly using their device's camera.",
+                    "Tumor Detection: Advanced machine learning model analyzes images to detect tumors.",
+                    "Real-time Analysis: Quick and efficient processing of images for immediate results."
+                ],
+                "benefits": [
+                    "Accessibility: Provides a convenient and accessible way for users to check X-ray images.",
+                    "Early Detection: Helps in the early detection of brain tumors, potentially leading to timely medical intervention.",
+                    "User-friendly: Simple and intuitive interface for easy navigation and usage."
+                ],
+                "disclaimers": [
+                    "Medical Advice: This app is not intended to replace professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health providers with any questions you may have regarding a medical condition.",
+                    "Accuracy: While the machine learning model aims to provide accurate results, it is not infallible. Users should not rely solely on the app for medical decisions."
+                ]
+            },
+            "tech_stack": {
+                "Java": "./assets/images/tech/java.png",
+                "XML": "./assets/images/tech/xml.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg",
+                "Python": "./assets/images/tech/python.png",
+                "Tensorflow": "./assets/images/tech/tensorflow.jpg",
+                "Keras": "./assets/images/tech/keras.jpg",
+                "Numpy": "./assets/images/tech/numpy.jpg",
+                "Pandas": "./assets/images/tech/pandas.jpg",
+                "Jupyter Notebook": "./assets/images/tech/jupyter.png"
+            },
+            "title_image": "./assets/images/android/btd/BTD_0.jpg",
+            "images": [
+                "./assets/images/android/btd/BTD_1.png",
+                "./assets/images/android/btd/BTD_2.png"
+            ],
+            "link": "",
+            "category": "android"
+        },
+
+        {
+            "id": 2,
+            "name": "Dynamic Island",
+            "description": {
+                "short_desc": "Dynamic Island is an Android application that brings iPhone 15-like dynamic island functionality to Android phones. The app displays various types of information, such as currently playing songs, incoming and ongoing calls, and map directions. Additionally, it offers customization options, allowing users to change the size and position of the dynamic island and access many more settings.",
+                "features": [
+                    "Information Display: Shows currently playing songs, incoming and ongoing calls, map directions, and more.",
+                    "Customization: Users can adjust the size and position of the dynamic island to suit their preferences.",
+                    "User-friendly Interface: Easy to navigate with intuitive controls for customization."
+                ],
+                "benefits": [
+                    "Enhanced User Experience: Provides a visually appealing and interactive way to display important information.",
+                    "Personalization: Offers extensive customization options to match user preferences and device aesthetics.",
+                    "Multitasking: Helps users manage multiple tasks efficiently by providing quick access to vital information."
+                ],
+                "disclaimers": [
+                    "Compatibility: The app's functionality might vary depending on the Android device and its specifications.",
+                    "Battery Usage: Continuous use of the dynamic island feature may impact battery life. Users should monitor their battery usage accordingly.",
+                    "Accuracy: While the app aims to provide accurate information display, it may occasionally experience discrepancies due to varying system updates and device capabilities."
+                ]
+            },
+            "tech_stack": {
+                "Java": "./assets/images/tech/java.png",
+                "XML": "./assets/images/tech/xml.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg",
+                "Glide": "./assets/images/tech/glide.jpg"
+            },
+            "title_image": "./assets/images/android/di/DI_0.jpg",
+            "images": [
+                "./assets/images/android/di/DI_1.png",
+                "./assets/images/android/di/DI_2.png",
+                "./assets/images/android/di/DI_3.png",
+                "./assets/images/android/di/DI_4.png"
+            ],
+            "link": "",
+            "category": "android"
+        },
+
+        {
+            "id": 3,
+            "name": "Wacky Mirror Camera Filter",
+            "description": {
+                "short_desc": "Wacky Mirror Camera Filter is a fun and creative camera app that adds a wavy effect to your videos. Users can record videos with this unique effect using both the front and rear cameras. The app also allows customization of the wave settings, including wave size and speed, providing a playful and dynamic recording experience.",
+                "features": [
+                    "Wavy Effect: Apply a wavy mirror effect to your videos for a fun and unique look.",
+                    "Dual Camera Support: Record videos using both front and rear cameras.",
+                    "Customizable Settings: Adjust wave size and speed to create different effects.",
+                    "Video Recording: Capture and save videos with the wavy effect applied."
+                ],
+                "benefits": [
+                    "Creative Expression: Provides a fun way to create and share unique videos with friends and on social media.",
+                    "User-friendly: Easy to use with simple controls for adjusting effects and recording.",
+                    "Versatile Recording: Supports both front and rear cameras for versatile video capture."
+                ],
+                "disclaimers": [
+                    "Device Compatibility: The app's performance may vary depending on the device and its camera capabilities.",
+                    "Effect Accuracy: While the app aims to provide a consistent wavy effect, results may vary depending on the device and recording conditions."
+                ]
+            },
+            "tech_stack": {
+                "Java": "./assets/images/tech/java.png",
+                "FFmpeg": "./assets/images/tech/ffmpeg.jpg",
+                "OpenGL": "./assets/images/tech/opengl.jpg",
+                "GLSL": "./assets/images/tech/glsl.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "Glide": "./assets/images/tech/glide.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg"
+            },
+            "title_image": "./assets/images/android/wmcf/WMCF_0.jpg",
+            "images": [
+                "./assets/images/android/wmcf/WMCF_1.png",
+                "./assets/images/android/wmcf/WMCF_2.png",
+                "./assets/images/android/wmcf/WMCF_3.png",
+                "./assets/images/android/wmcf/WMCF_4.png"
+            ],
+            "link": "",
+            "category": "android"
+        },
+
+        {
+            "id": 4,
+            "name": "Screen Lock",
+            "description": {
+                "short_desc": "Screen Lock is an Android application designed to enhance the security of your phone with a range of features. It allows users to add locks to individual apps, set additional phone locks with various types such as pattern and passcode, and includes several advanced security options. One standout feature is the \"intruder selfie,\" which captures a photo after a set number of incorrect passcode attempts. The app also offers a secure vault for storing photos and videos, among other functionalities like app icon hiding, uninstall protection, and charging animations.",
+                "features": [
+                    "App Lock: Secure individual apps with pattern or passcode locks.",
+                    "Phone Lock: Add additional security to your phone with various lock types.",
+                    "Intruder Selfie: Capture a photo of anyone attempting to access your phone after a set number of incorrect passcode attempts.",
+                    "Secure Vault: Securely store photos and videos in a protected vault.",
+                    "App Icon Hiding: Change the app icon to disguise and hide the app.",
+                    "Uninstall Protection: Prevent unauthorized users from uninstalling the app and disabling security features.",
+                    "Charging Animation: Display a custom animation while the phone is charging."
+                ],
+                "benefits": [
+                    "Enhanced Security: Provides multiple layers of security for your phone and individual apps.",
+                    "Intruder Alert: Helps identify unauthorized access attempts with the intruder selfie feature.",
+                    "Data Protection: Securely stores sensitive photos and videos in a vault.",
+                    "User Customization: Allows users to customize the app appearance and functionality to their preferences."
+                ],
+                "disclaimers": [
+                    "Privacy: Users should be aware of the app's permissions and ensure they are comfortable with the data the app accesses.",
+                    "Device Compatibility: Features may vary depending on the device and its specifications.",
+                    "Battery Usage: Some features, like intruder selfies and charging animations, may impact battery life."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "XML": "./assets/images/tech/xml.jpg",
+                "SQLite": "./assets/images/tech/sqlite.jpg",
+                "Glide": "./assets/images/tech/glide.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg"
+            },
+            "title_image": "./assets/images/android/sl/SL_0.jpg",
+            "images": [
+                "./assets/images/android/sl/SL_1.png",
+                "./assets/images/android/sl/SL_2.png",
+                "./assets/images/android/sl/SL_3.png"
+            ],
+            "link": "",
+            "category": "android"
+        },
+
+        {
+            "id": 5,
+            "name": "Pokedex",
+            "description": {
+                "short_desc": "Pokedex is a straightforward Android application that displays a list of Pokémon fetched from the Pokémon API. The app includes a search functionality to easily find specific Pokémon. By clicking on a Pokémon, users can view detailed information about it. This app was developed primarily to learn and practice Jetpack Compose, a modern Android UI toolkit.",
+                "features": [
+                    "Pokémon List: Displays a comprehensive list of Pokémon retrieved from the Pokémon API.",
+                    "Search Functionality: Allows users to search for Pokémon by name.",
+                    "Detailed View: Provides detailed information about each Pokémon when clicked.",
+                    "Modern UI: Utilizes Jetpack Compose for a sleek and responsive user interface."
+                ],
+                "benefits": [
+                    "User-friendly: Simple and intuitive interface for easy navigation and usage.",
+                    "Quick Access: Provides a fast and efficient way to access Pokémon information."
+                ],
+                "disclaimers": [
+                    "Data Accuracy: The app relies on the Pokémon API for data, so any inaccuracies in the API will reflect in the app."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "Compose": "./assets/images/tech/compose.png",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "RetroFit": "./assets/images/tech/retrofit.jpg",
+                "Hilt": "./assets/images/tech/hilt.jpg",
+                "Glide": "./assets/images/tech/glide.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg"
+            },
+            "title_image": "./assets/images/android/poke/POKE_0.jpg",
+            "images": [
+                "./assets/images/android/poke/POKE_1.png",
+                "./assets/images/android/poke/POKE_2.png",
+                "./assets/images/android/poke/POKE_3.png"
+            ],
+            "link": "https://github.com/pparekh2009/PokeDex",
+            "category": "android"
+        },
+
+        {
+            "id": 6,
+            "name": "Video Background Removal",
+            "description": {
+                "short_desc": "Video Background Removal is an innovative app offering two primary modes: video background removal and green screen removal. Users can choose to record videos directly using their camera or select existing videos from their gallery. In the video background removal mode, the app detects and replaces the background with a provided image. In the green screen removal mode, the app detects green color and replaces it with the selected image. ",
+                "features": [
+                    "Video Background Removal: Automatically detects and replaces the video background with a chosen image in real-time.",
+                    "Green Screen Removal: Detects green screen backgrounds and replaces them with selected images.",
+                    "Dual Mode Functionality: Supports both camera and gallery modes for video selection.",
+                    "Custom Backgrounds: Users can choose different images to replace backgrounds in both modes."
+                ],
+                "benefits": [
+                    "Versatile Usage: Offers flexible options for video recording and editing, catering to various creative needs.",
+                    "Professional Results: Enables users to create professional-looking videos with customized backgrounds.",
+                    "Easy to Use: Simple interface makes it accessible for users of all skill levels."
+                ],
+                "disclaimers": [
+                    "Image Positioning: There may be issues with the sizing and positioning of replaced images, leading to improper alignment.",
+                    "Performance: The app's performance may vary based on the device's processing power and camera quality."
+                ]
+            },
+            "tech_stack": {
+                "Java": "./assets/images/tech/java.png",
+                "FFmpeg": "./assets/images/tech/ffmpeg.jpg",
+                "MLKit": "./assets/images/tech/mlkit.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "Glide": "./assets/images/tech/glide.jpg",
+                "Android Studio": "./assets/images/tech/android studio.jpg",
+                "Gradle": "./assets/images/tech/gradle.jpg"
+            },
+            "title_image": "./assets/images/android/vbgr/VBgR_0.jpg",
+            "images": [
+                "./assets/images/android/vbgr/VBgR_1.png",
+                "./assets/images/android/vbgr/VBgR_2.png",
+                "./assets/images/android/vbgr/VBgR_3.png",
+                "./assets/images/android/vbgr/VBgR_4.png"
+            ],
+            "link": "",
+            "category": "android"
+        }
+    ],
+
+    "Machine Learning Projects":[
+        {
+            "id": 7,
+            "name": "Titanic Survival Prediction",
+            "description": {
+                "short_desc": "Titanic Survival Prediction is a straightforward machine learning project designed to predict the likelihood of a person's survival on the Titanic. By inputting personal details, the model outputs a survival percentage. This project leverages logistic regression to make predictions based on historical data from the Titanic disaster.",
+                "features": [
+                    "User Input: Accepts details such as age, gender, passenger class, and other relevant factors.",
+                    "Survival Prediction: Outputs the predicted survival percentage based on the input data.",
+                    "Historical Data: Utilizes real historical data from the Titanic to train the model."
+                ],
+                "benefits": [
+                    "Interactive: Provides a simple and interactive way to explore the application of machine learning in predicting outcomes.",
+                    "Insightful: Offers insights into how different factors affected survival rates on the Titanic."
+                ],
+                "disclaimers": [
+                    "Prediction Accuracy: The model's predictions are based on historical data and statistical probabilities, and thus should not be taken as absolute certainty.",
+                    "Data Limitations: The accuracy of predictions depends on the quality and completeness of the input data."
+                ]
+            },
+            "tech_stack": {
+                "Python": "./assets/images/tech/python.png",
+                "Flask": "./assets/images/tech/flask.jpg",
+                "Pandas": "./assets/images/tech/pandas.jpg",
+                "Scikit-Learn": "./assets/images/tech/sklearn.jpg",
+                "HTML": "./assets/images/tech/html.png",
+                "CSS": "./assets/images/tech/css.png",
+                "Jupyter Notebook": "./assets/images/tech/jupyter.png"
+            },
+            "title_image": "./assets/images/ml/tsp/TSP_0.jpeg",
+            "images": [
+                "./assets/images/ml/tsp/TSP_1.jpeg",
+                "./assets/images/ml/tsp/TSP_2.jpeg"
+            ],
+            "link": "https://github.com/pparekh2009/Titanic-Survival-Prediction",
+            "category": "ml"
+        }
+    ],
+
+    "Web Projects":[
+        {
+            "id": 8,
+            "name": "Weather App",
+            "description": {
+                "short_desc": "The Weather App is a web application developed using HTML, CSS, and JavaScript that provides real-time weather information based on the user's current location. Utilizing the OpenWeatherAPI, the app displays comprehensive weather details such as visibility, \"feels like\" temperature, humidity, maximum and minimum temperatures, and more.",
+                "features": [
+                    "Current Location Weather: Automatically retrieves and displays weather information based on the user's current location.",
+                    "Comprehensive Weather Data: Provides detailed weather information including visibility, feels like, temperature, humidity, maximum and minimum temperatures, and more.",
+                    "Real-time Updates: Ensures weather data is up-to-date with real-time API calls."
+                ],
+                "benefits": [
+                    "User-friendly Interface: Easy-to-navigate interface with clear and concise weather information.",
+                    "Real-time Data: Provides accurate and current weather data for the user's location.",
+                    "Detailed Insights: Offers a broad range of weather details beyond just temperature, giving users a complete weather overview."
+                ],
+                "disclaimers": [
+                    "Data Accuracy: The app relies on the OpenWeatherAPI for data, so any inaccuracies in the API will reflect in the app.",
+                    "Location Services: Accurate weather information depends on the device's location services being enabled and functioning properly."
+                ]
+            },
+            "tech_stack": {
+                "HTML": "./assets/images/tech/html.png",
+                "CSS": "./assets/images/tech/css.png",
+                "JavaScript": "./assets/images/tech/js.png"
+            },
+            "title_image": "./assets/images/web/weather/weather_1.jpeg",
+            "images": [
+                "./assets/images/web/weather/weather_1.jpeg"
+            ],
+            "link": "",
+            "category": "web"
+        },
+
+        {
+            "id": 9,
+            "name": "Solar System",
+            "description": {
+                "short_desc": "Solar System is a web application developed using HTML, CSS, and JavaScript that provides an interactive visualization of the solar system. Users can hover over each planet to view detailed information such as radius, distance from Earth, rotational velocity, mass, volume, axial tilt, and more. The planets are animated to rotate based on their respective speeds and tilts, offering an engaging educational experience.",
+                "features": [
+                    "Interactive Visualization: Displays the solar system with planets that users can interact with by hovering over them.",
+                    "Detailed Planet Information: Provides comprehensive details for each planet, including radius, distance from Earth, rotational velocity, mass, volume, and axial tilt.",
+                    "Animated Planets: Planets are animated to rotate at speeds and tilts corresponding to real astronomical data."
+                ],
+                "benefits": [
+                    "Educational Tool: Offers a visually engaging way to learn about the solar system and the unique characteristics of each planet.",
+                    "Interactive Experience: Enhances user engagement through interactive elements and animations.",
+                    "Comprehensive Data: Delivers detailed and accurate information about each planet in an easy-to-understand format."
+                ],
+                "disclaimers": [
+                    "Browser Compatibility: Performance and visual quality may vary across different web browsers and devices."
+                ]
+            },
+            "tech_stack": {
+                "HTML": "./assets/images/tech/html.png",
+                "CSS": "./assets/images/tech/css.png",
+                "JavaScript": "./assets/images/tech/js.png"
+            },
+            "title_image": "./assets/images/web/ss/SS_0.jpeg",
+            "images": [
+                "./assets/images/web/ss/SS_0.jpeg",
+                "./assets/images/web/ss/SS_1.jpeg",
+                "./assets/images/web/ss/SS_2.jpeg"
+            ],
+            "link": "",
+            "category": "web"
+        }
+    ]
+}

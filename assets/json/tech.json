@@ -1,0 +1,16 @@
+{
+    "technologies": [
+        {
+            "Java": "./assets/images/java.png"
+        },
+        "Kotlin",
+        "Compose",
+        "Android",
+        "Python",
+        "HTML",
+        "CSS",
+        "Git",
+        "SQL",
+        "Jupyter"
+    ]
+}

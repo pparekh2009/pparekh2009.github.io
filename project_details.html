@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="./assets/css/aos.css">
 	<link rel="stylesheet" href="./assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <style>
         #title-image {
@@ -20,9 +22,13 @@
             color: var(--color-base);
             padding: 10px;
         }
-
+/* 
         .desc-container {
             white-space: pre-wrap;
+        } */
+
+        .features-container, .benefits-container, .disclaimers-container {
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -36,40 +42,118 @@
     <div class="desc-container m-4">
         <h2>About</h2>
         <p id="project-description"></p>
+
+        <div class="features-container">
+            <h3>Features</h3>
+            <ul id="feature-list"></ul>
+        </div>
+
+        <div class="benefits-container">
+            <h3>Benefits</h3>
+            <ul id="benefit-list"></ul>
+        </div>
+
+        <div class="disclaimers-container">
+            <h3>Disclaimers</h3>
+            <ul id="disclaimer-list"></ul>
+        </div>
     </div>
 
+    <div class="row gy-5 m-3">
+
+        <h2>Tech Stack</h2>
+
+        <div class="col-lg-6 mb-5">
+            <div class="tech-container row gy-2 d-lg-grid">
+                <!-- <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/java.png">
+                    <span class="tech-label fw-bold">Java</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/kotlin.jpg">
+                    <span class="tech-label fw-bold">Kotlin</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/compose.png">
+                    <span class="tech-label fw-bold">Compose</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/android.png">
+                    <span class="tech-label fw-bold">Android</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/python.png">
+                    <span class="tech-label fw-bold">Python</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/html.png">
+                    <span class="tech-label fw-bold">HTML</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/css.png">
+                    <span class="tech-label fw-bold">CSS</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/git.png">
+                    <span class="tech-label fw-bold">Git</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/sql.png">
+                    <span class="tech-label fw-bold">SQL</span>
+                </div>
+
+                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
+                    <img class="rounded-4" src="./assets/images/tech/jupyter.png">
+                    <span class="tech-label fw-bold">Juypter Notebook</span>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div id="link-container">
+        <!-- <h4><a class="link-custom text-brand">View on Github</a></h4> -->
+    </div>
+
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <!-- <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+            </div>
+        <div class="carousel-cell">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+        </div>
+        <div class="carousel-cell">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+        </div>
+        <div class="carousel-cell">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+        </div>
+        <div class="carousel-cell">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+        </div>
+        <div class="carousel-cell">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+        </div> -->
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" async></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/aos.js"></script>
 	<script src="./assets/js/main.js"></script>
-
-    <script>
-        const searchParams = new URLSearchParams(window.location.search)
-        const id = searchParams.get("id")
-        console.log(id)
-
-        let projectHeader = document.getElementById("project-header")
-        let titleImage = document.getElementById("title-image")
-        let projectDescription = document.getElementById("project-description")
-
-        fetch('./assets/projects.json')
-            .then(response => response.json())
-            .then(data => {
-                Object.entries(data).forEach(([key, value]) => {
-                    console.log("Key: " + key)
-                    console.log("Value: " + value)
-
-                    Object.entries(value).forEach(([v_key, v_value]) => {
-                        console.log("Project id: " + v_value.id)
-                        if (v_value.id == id) {
-                            console.log("Id: " + v_value.name)
-                            projectHeader.textContent = v_value.name
-                            titleImage.src = v_value.title_image
-                            projectDescription.textContent = v_value.description
-                            throw new Error("Stop Iterating!!")
-                        }
-                    })
-                })
-            })
-    </script>
+    <script type="module" src="./assets/js/proj_details.js"></script>
 </body>
 </html>
