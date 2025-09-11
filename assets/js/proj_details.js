@@ -117,6 +117,13 @@ const searchParams = new URLSearchParams(window.location.search)
 
                             loadImages(v_value.images).then(() => {
                                 console.log("inside then")
+
+                                if (v_value.images.length === 0) {
+                                    console.log("Inside 0 images condition")
+                                    document.getElementById("image-container").style.display = "None"
+                                    return
+                                }
+
                                 let flickity = new Flickity(carousel, {
                                     cellAlign: 'center',
                                     imagesLoaded: true,

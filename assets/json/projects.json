@@ -1,7 +1,90 @@
 {
-    "Android Projects": [
+    "Full Stack Projects": [
         {
             "id": 1,
+            "name": "FairShare",
+            "description": {
+                "short_desc": "FairShare is a full-stack Android application designed to simplify group expenses. It allows users to record shared costs, split bills, and monitor balances effortlessly.",
+                "features": [
+                    "Expense Logging: Add, edit, and categorize group expenses.",
+                    "Balance Calculation: Automatically calculates each member's share and outstanding balance.",
+                    "Real-time Sync: Syncs data across devices using backend RESTful APIs.",
+                    "Clean UI: Built with MVVM architecture and Jetpack components for maintainability."
+                ],
+                "benefits": [
+                    "Convenience: Simplifies the process of tracking group expenses.",
+                    "Accuracy: Reduces errors in manual calculations with automated balance tracking.",
+                    "Collaboration: Enables transparent expense management for groups of any size."
+                ],
+                "disclaimers": [
+                    "Data Accuracy: Calculations are based on user inputs; incorrect entries may affect results.",
+                    "Connectivity: Real-time sync requires internet connectivity with backend services."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "XML": "./assets/images/tech/xml.jpg",
+                "RetroFit": "./assets/images/tech/retrofit.jpg",
+                "Firebase": "./assets/images/tech/firebase.png",
+                "Java": "./assets/images/tech/java.png",
+                "Spring Boot": "./assets/images/tech/springboot.png",
+                "Cognito": "./assets/images/tech/cognito.png",
+                "EC2": "./assets/images/tech/ec2.png",
+                "S3": "./assets/images/tech/s3.png",
+                "Lambda": "./assets/images/tech/lambda.png",
+                "MySQL": "./assets/images/tech/mysql.png"
+            },
+            "title_image": "./assets/images/fullstack/fs/FS_0.png",
+            "images": [
+                "./assets/images/fullstack/fs/FS_1.png",
+                "./assets/images/fullstack/fs/FS_2.png",
+                "./assets/images/fullstack/fs/FS_3.png",
+                "./assets/images/fullstack/fs/FS_4.png"
+            ],
+            "link": "https://github.com/pparekh2009/FairShare",
+            "category": "fullstack"
+        },
+
+        {
+            "id": 2,
+            "name": "Plated",
+            "description": {
+                "short_desc": "Plated is a social Android app for food enthusiasts where users can share recipes, explore dishes from others, and engage through likes, comments, and follows. It combines the fun of social networking with a community-driven space to discover and connect over cooking.",
+                "features": [
+                    "Recipe Posting: Users can create and share recipes with photos and descriptions.",
+                    "Social Interactions: Like, comment, and engage with other users’ recipes.",
+                    "User Authentication: Secure sign-up and login powered by backend APIs.",
+                    "Modern UI: Built with Kotlin, Jetpack, and MVVM for an intuitive experience."
+                ],
+                "benefits": [
+                    "Community: Connects food enthusiasts through shared recipes and interactions.",
+                    "Discoverability: Helps users explore trending or highly rated recipes.",
+                    "Engagement: Encourages user participation with likes and comments."
+                ],
+                "disclaimers": [
+                    "Content Responsibility: Recipes and content are user-generated; accuracy and safety are not guaranteed.",
+                    "In Progress: Some features may still be under active development."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "XML": "./assets/images/tech/xml.jpg",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "RetroFit": "./assets/images/tech/retrofit.jpg",
+                "Java": "./assets/images/tech/java.png",
+                "Spring Boot": "./assets/images/tech/springboot.png",
+                "MySQL": "./assets/images/tech/mysql.png"
+            },
+            "title_image": "./assets/images/fullstack/pltd/PLTD_0.png",
+            "images": [],
+            "link": "https://github.com/pparekh2009/Plated",
+            "category": "fullstack"
+        }
+    ],
+
+    "Android Projects": [
+        {
+            "id": 3,
             "name": "Brain Tumor Detection",
             "description": {
                 "short_desc": "Brain Tumor Detection is an Android application designed to assist users in identifying the presence of a tumor in brain X-ray images. Users can upload images from their gallery or capture them using their camera. The app utilizes a machine learning model to analyze the images and determine if a tumor is present.",
@@ -34,7 +117,7 @@
                 "Pandas": "./assets/images/tech/pandas.jpg",
                 "Jupyter Notebook": "./assets/images/tech/jupyter.png"
             },
-            "title_image": "./assets/images/android/btd/BTD_0.jpg",
+            "title_image": "./assets/images/android/btd/BTD_0.png",
             "images": [
                 "./assets/images/android/btd/BTD_1.png",
                 "./assets/images/android/btd/BTD_2.png"
@@ -44,7 +127,7 @@
         },
 
         {
-            "id": 2,
+            "id": 4,
             "name": "Dynamic Island",
             "description": {
                 "short_desc": "Dynamic Island is an Android application that brings iPhone 15-like dynamic island functionality to Android phones. The app displays various types of information, such as currently playing songs, incoming and ongoing calls, and map directions. Additionally, it offers customization options, allowing users to change the size and position of the dynamic island and access many more settings.",
@@ -72,7 +155,7 @@
                 "Gradle": "./assets/images/tech/gradle.jpg",
                 "Glide": "./assets/images/tech/glide.jpg"
             },
-            "title_image": "./assets/images/android/di/DI_0.jpg",
+            "title_image": "./assets/images/android/di/DI_0.png",
             "images": [
                 "./assets/images/android/di/DI_1.png",
                 "./assets/images/android/di/DI_2.png",
@@ -84,7 +167,7 @@
         },
 
         {
-            "id": 3,
+            "id": 5,
             "name": "Wacky Mirror Camera Filter",
             "description": {
                 "short_desc": "Wacky Mirror Camera Filter is a fun and creative camera app that adds a wavy effect to your videos. Users can record videos with this unique effect using both the front and rear cameras. The app also allows customization of the wave settings, including wave size and speed, providing a playful and dynamic recording experience.",
@@ -114,7 +197,7 @@
                 "Android Studio": "./assets/images/tech/android studio.jpg",
                 "Gradle": "./assets/images/tech/gradle.jpg"
             },
-            "title_image": "./assets/images/android/wmcf/WMCF_0.jpg",
+            "title_image": "./assets/images/android/wmcf/WMCF_0.png",
             "images": [
                 "./assets/images/android/wmcf/WMCF_1.png",
                 "./assets/images/android/wmcf/WMCF_2.png",
@@ -126,7 +209,7 @@
         },
 
         {
-            "id": 4,
+            "id": 6,
             "name": "Screen Lock",
             "description": {
                 "short_desc": "Screen Lock is an Android application designed to enhance the security of your phone with a range of features. It allows users to add locks to individual apps, set additional phone locks with various types such as pattern and passcode, and includes several advanced security options. One standout feature is the \"intruder selfie,\" which captures a photo after a set number of incorrect passcode attempts. The app also offers a secure vault for storing photos and videos, among other functionalities like app icon hiding, uninstall protection, and charging animations.",
@@ -160,7 +243,7 @@
                 "Android Studio": "./assets/images/tech/android studio.jpg",
                 "Gradle": "./assets/images/tech/gradle.jpg"
             },
-            "title_image": "./assets/images/android/sl/SL_0.jpg",
+            "title_image": "./assets/images/android/sl/SL_0.png",
             "images": [
                 "./assets/images/android/sl/SL_1.png",
                 "./assets/images/android/sl/SL_2.png",
@@ -171,7 +254,7 @@
         },
 
         {
-            "id": 5,
+            "id": 7,
             "name": "Pokedex",
             "description": {
                 "short_desc": "Pokedex is a straightforward Android application that displays a list of Pokémon fetched from the Pokémon API. The app includes a search functionality to easily find specific Pokémon. By clicking on a Pokémon, users can view detailed information about it. This app was developed primarily to learn and practice Jetpack Compose, a modern Android UI toolkit.",
@@ -199,7 +282,7 @@
                 "Android Studio": "./assets/images/tech/android studio.jpg",
                 "Gradle": "./assets/images/tech/gradle.jpg"
             },
-            "title_image": "./assets/images/android/poke/POKE_0.jpg",
+            "title_image": "./assets/images/android/poke/POKE_0.png",
             "images": [
                 "./assets/images/android/poke/POKE_1.png",
                 "./assets/images/android/poke/POKE_2.png",
@@ -210,7 +293,7 @@
         },
 
         {
-            "id": 6,
+            "id": 8,
             "name": "Video Background Removal",
             "description": {
                 "short_desc": "Video Background Removal is an innovative app offering two primary modes: video background removal and green screen removal. Users can choose to record videos directly using their camera or select existing videos from their gallery. In the video background removal mode, the app detects and replaces the background with a provided image. In the green screen removal mode, the app detects green color and replaces it with the selected image. ",
@@ -239,7 +322,7 @@
                 "Android Studio": "./assets/images/tech/android studio.jpg",
                 "Gradle": "./assets/images/tech/gradle.jpg"
             },
-            "title_image": "./assets/images/android/vbgr/VBgR_0.jpg",
+            "title_image": "./assets/images/android/vbgr/VBgR_0.png",
             "images": [
                 "./assets/images/android/vbgr/VBgR_1.png",
                 "./assets/images/android/vbgr/VBgR_2.png",
@@ -248,114 +331,6 @@
             ],
             "link": "",
             "category": "android"
-        }
-    ],
-
-    "Machine Learning Projects":[
-        {
-            "id": 7,
-            "name": "Titanic Survival Prediction",
-            "description": {
-                "short_desc": "Titanic Survival Prediction is a straightforward machine learning project designed to predict the likelihood of a person's survival on the Titanic. By inputting personal details, the model outputs a survival percentage. This project leverages logistic regression to make predictions based on historical data from the Titanic disaster.",
-                "features": [
-                    "User Input: Accepts details such as age, gender, passenger class, and other relevant factors.",
-                    "Survival Prediction: Outputs the predicted survival percentage based on the input data.",
-                    "Historical Data: Utilizes real historical data from the Titanic to train the model."
-                ],
-                "benefits": [
-                    "Interactive: Provides a simple and interactive way to explore the application of machine learning in predicting outcomes.",
-                    "Insightful: Offers insights into how different factors affected survival rates on the Titanic."
-                ],
-                "disclaimers": [
-                    "Prediction Accuracy: The model's predictions are based on historical data and statistical probabilities, and thus should not be taken as absolute certainty.",
-                    "Data Limitations: The accuracy of predictions depends on the quality and completeness of the input data."
-                ]
-            },
-            "tech_stack": {
-                "Python": "./assets/images/tech/python.png",
-                "Flask": "./assets/images/tech/flask.jpg",
-                "Pandas": "./assets/images/tech/pandas.jpg",
-                "Scikit-Learn": "./assets/images/tech/sklearn.jpg",
-                "HTML": "./assets/images/tech/html.png",
-                "CSS": "./assets/images/tech/css.png",
-                "Jupyter Notebook": "./assets/images/tech/jupyter.png"
-            },
-            "title_image": "./assets/images/ml/tsp/TSP_0.jpeg",
-            "images": [
-                "./assets/images/ml/tsp/TSP_1.jpeg",
-                "./assets/images/ml/tsp/TSP_2.jpeg"
-            ],
-            "link": "https://github.com/pparekh2009/Titanic-Survival-Prediction",
-            "category": "ml"
-        }
-    ],
-
-    "Web Projects":[
-        {
-            "id": 8,
-            "name": "Weather App",
-            "description": {
-                "short_desc": "The Weather App is a web application developed using HTML, CSS, and JavaScript that provides real-time weather information based on the user's current location. Utilizing the OpenWeatherAPI, the app displays comprehensive weather details such as visibility, \"feels like\" temperature, humidity, maximum and minimum temperatures, and more.",
-                "features": [
-                    "Current Location Weather: Automatically retrieves and displays weather information based on the user's current location.",
-                    "Comprehensive Weather Data: Provides detailed weather information including visibility, feels like, temperature, humidity, maximum and minimum temperatures, and more.",
-                    "Real-time Updates: Ensures weather data is up-to-date with real-time API calls."
-                ],
-                "benefits": [
-                    "User-friendly Interface: Easy-to-navigate interface with clear and concise weather information.",
-                    "Real-time Data: Provides accurate and current weather data for the user's location.",
-                    "Detailed Insights: Offers a broad range of weather details beyond just temperature, giving users a complete weather overview."
-                ],
-                "disclaimers": [
-                    "Data Accuracy: The app relies on the OpenWeatherAPI for data, so any inaccuracies in the API will reflect in the app.",
-                    "Location Services: Accurate weather information depends on the device's location services being enabled and functioning properly."
-                ]
-            },
-            "tech_stack": {
-                "HTML": "./assets/images/tech/html.png",
-                "CSS": "./assets/images/tech/css.png",
-                "JavaScript": "./assets/images/tech/js.png"
-            },
-            "title_image": "./assets/images/web/weather/weather_1.jpeg",
-            "images": [
-                "./assets/images/web/weather/weather_1.jpeg"
-            ],
-            "link": "",
-            "category": "web"
-        },
-
-        {
-            "id": 9,
-            "name": "Solar System",
-            "description": {
-                "short_desc": "Solar System is a web application developed using HTML, CSS, and JavaScript that provides an interactive visualization of the solar system. Users can hover over each planet to view detailed information such as radius, distance from Earth, rotational velocity, mass, volume, axial tilt, and more. The planets are animated to rotate based on their respective speeds and tilts, offering an engaging educational experience.",
-                "features": [
-                    "Interactive Visualization: Displays the solar system with planets that users can interact with by hovering over them.",
-                    "Detailed Planet Information: Provides comprehensive details for each planet, including radius, distance from Earth, rotational velocity, mass, volume, and axial tilt.",
-                    "Animated Planets: Planets are animated to rotate at speeds and tilts corresponding to real astronomical data."
-                ],
-                "benefits": [
-                    "Educational Tool: Offers a visually engaging way to learn about the solar system and the unique characteristics of each planet.",
-                    "Interactive Experience: Enhances user engagement through interactive elements and animations.",
-                    "Comprehensive Data: Delivers detailed and accurate information about each planet in an easy-to-understand format."
-                ],
-                "disclaimers": [
-                    "Browser Compatibility: Performance and visual quality may vary across different web browsers and devices."
-                ]
-            },
-            "tech_stack": {
-                "HTML": "./assets/images/tech/html.png",
-                "CSS": "./assets/images/tech/css.png",
-                "JavaScript": "./assets/images/tech/js.png"
-            },
-            "title_image": "./assets/images/web/ss/SS_0.jpeg",
-            "images": [
-                "./assets/images/web/ss/SS_0.jpeg",
-                "./assets/images/web/ss/SS_1.jpeg",
-                "./assets/images/web/ss/SS_2.jpeg"
-            ],
-            "link": "",
-            "category": "web"
         }
     ]
 }
