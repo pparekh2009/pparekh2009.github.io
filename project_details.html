@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doc</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/aos.css">
 	<link rel="stylesheet" href="./assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <style>
         #title-image {
@@ -22,10 +20,6 @@
             color: var(--color-base);
             padding: 10px;
         }
-/* 
-        .desc-container {
-            white-space: pre-wrap;
-        } */
 
         .features-container, .benefits-container, .disclaimers-container {
             margin-top: 40px;
@@ -35,7 +29,7 @@
 <body>
     
     <div class="position-relative overflow-hidden">
-        <img id="title-image" class="w-100 object-fit-cover">
+        <img id="title-image" class="w-100 object-fit-cover" alt="title_image">
         <h1 id="project-header" class="position-absolute bottom-0 m-auto w-100"></h1>
     </div>
 
@@ -68,51 +62,6 @@
                 <!-- <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
                     <img class="rounded-4" src="./assets/images/tech/java.png">
                     <span class="tech-label fw-bold">Java</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/kotlin.jpg">
-                    <span class="tech-label fw-bold">Kotlin</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/compose.png">
-                    <span class="tech-label fw-bold">Compose</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/android.png">
-                    <span class="tech-label fw-bold">Android</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/python.png">
-                    <span class="tech-label fw-bold">Python</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/html.png">
-                    <span class="tech-label fw-bold">HTML</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/css.png">
-                    <span class="tech-label fw-bold">CSS</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/git.png">
-                    <span class="tech-label fw-bold">Git</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/sql.png">
-                    <span class="tech-label fw-bold">SQL</span>
-                </div>
-
-                <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/jupyter.png">
-                    <span class="tech-label fw-bold">Juypter Notebook</span>
                 </div> -->
             </div>
         </div>
@@ -123,34 +72,22 @@
         <!-- <h4><a class="link-custom text-brand">View on Github</a></h4> -->
     </div>
 
-    <div class="carousel-wrapper" id="image-container">
-        <div class="carousel">
-            <!-- <div class="carousel-cell">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+    <div class="carousel-wrapper justify-content-center" id="image-container" style="width: 400px; height: 600px; overflow: hidden">
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="height: 100%">
+            <div id="carousel-wrapper" class="carousel-inner" style="height: 100%">
+
+                <a class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="carousel-cell">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
-            </div>
-        <div class="carousel-cell">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
-        </div>
-        <div class="carousel-cell">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
-        </div>
-        <div class="carousel-cell">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
-        </div>
-        <div class="carousel-cell">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
-        </div>
-        <div class="carousel-cell">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
-        </div> -->
       </div>
     </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" async></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/aos.js"></script>
 	<script src="./assets/js/main.js"></script>

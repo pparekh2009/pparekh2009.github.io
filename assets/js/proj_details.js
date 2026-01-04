@@ -1,172 +1,120 @@
 const searchParams = new URLSearchParams(window.location.search)
-        const id = searchParams.get("id")
-        console.log(id)
+const id = searchParams.get("id")
+console.log(id)
 
-        let projectHeader = document.getElementById("project-header")
-        let titleImage = document.getElementById("title-image")
-        let projectDescription = document.getElementById("project-description")
-        let featureList = document.getElementById("feature-list")
-        let benefitList = document.getElementById("benefit-list")
-        let disclaimerList = document.getElementById("disclaimer-list")
-        let techContainer = document.getElementsByClassName("tech-container")[0]
-        let linkContainer = document.getElementById("link-container")
-        let carousel = document.querySelector('.carousel')
-        
-        // var flkty = new Flickity(carousel, {
-        //     imagesLoaded: true,
-        //     percentPosition: false,
-        // });
+let projectHeader = document.getElementById("project-header")
+let titleImage = document.getElementById("title-image")
+let projectDescription = document.getElementById("project-description")
+let featureList = document.getElementById("feature-list")
+let benefitList = document.getElementById("benefit-list")
+let disclaimerList = document.getElementById("disclaimer-list")
+let techContainer = document.getElementsByClassName("tech-container")[0]
+let linkContainer = document.getElementById("link-container")
+let carousel = document.getElementById("carousel-wrapper")
 
-        // var imgs = carousel.querySelectorAll('.carousel-cell img');
-        // // get transform property
-        // var docStyle = document.documentElement.style;
-        // var transformProp = typeof docStyle.transform == 'string' ?
-        //     'transform' : 'WebkitTransform';
+fetch('./assets/json/projects.json')
+    .then(response => response.json())
+    .then(data => {
 
-        // flkty.on( 'scroll', function() {
-        //     flkty.slides.forEach( function( slide, i ) {
-        //         var img = imgs[i];
-        //         var x = ( slide.target + flkty.x ) * -1/2;
-        //         img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-        //     });
-        // });
+        Object.entries(data).forEach(([category, projects]) => {
 
-        fetch('./assets/json/projects.json')
-            .then(response => response.json())
-            .then(data => {
-                Object.entries(data).forEach(([key, value]) => {
-                    console.log("Key: " + key)
-                    console.log("Value: " + value)
+            console.log("Key: ")
+            console.log(category)
+            console.log("Value: ")
+            console.log(projects)
 
-                    Object.entries(value).forEach(([v_key, v_value]) => {
-                        console.log("Project id: " + v_value.id)
-                        if (v_value.id == id) {
-                            console.log("Id: " + v_value.name)
-                            
-                            projectHeader.textContent = v_value.name
-                            
-                            titleImage.src = v_value.title_image
-                            
-                            projectDescription.textContent = v_value.description.short_desc
-                            
-                            for (let feature in v_value.description.features) {
-                                let featureItem = document.createElement("li")
-                                featureItem.textContent = v_value.description.features[feature]
-                                featureList.appendChild(featureItem)
-                            }
+            Object.entries(projects).forEach(([_, project]) => {
 
-                            for (let benefit in v_value.description.benefits) {
-                                let benefitItem = document.createElement("li")
-                                benefitItem.textContent = v_value.description.benefits[benefit]
-                                benefitList.appendChild(benefitItem)
-                            }
+                console.log("Project id: " + project.id)
 
-                            for (let disclaimer in v_value.description.disclaimers) {
-                                let disclaimerItem = document.createElement("li")
-                                disclaimerItem.textContent = v_value.description.disclaimers[disclaimer]
-                                disclaimerList.appendChild(disclaimerItem)
-                            }
+                if (project.id === parseInt(id)) {
+                    console.log("Id: " + project.name)
 
-                            Object.entries(v_value.tech_stack).forEach(([label, src]) => {
-                                let techCard = document.createElement("div")
-                                techCard.classList.add("tech-card", "bg-base", "rounded-4")
-                                techCard.dataAos = "fade-up"
-                                techCard.dataAosDelay = "400"
+                    projectHeader.textContent = project.name
+                    document.title = project.name
 
-                                let techImg = document.createElement("img")
-                                techImg.classList.add("rounded-4")
-                                techImg.src = src
+                    titleImage.src = project.title_image
 
-                                let techLabel = document.createElement("span")
-                                techLabel.classList.add("tech-label", "fw-bold")
-                                techLabel.textContent = label
+                    projectDescription.textContent = project.description.short_desc
 
-                                techCard.appendChild(techImg)
-                                techCard.appendChild(techLabel)
+                    for (let feature in project.description.features) {
+                        let featureItem = document.createElement("li")
+                        featureItem.textContent = project.description.features[feature]
+                        featureList.appendChild(featureItem)
+                    }
 
-                                techContainer.appendChild(techCard)
-                            })
+                    for (let benefit in project.description.benefits) {
+                        let benefitItem = document.createElement("li")
+                        benefitItem.textContent = project.description.benefits[benefit]
+                        benefitList.appendChild(benefitItem)
+                    }
 
-                            let projectLink = v_value.link
-                            if (projectLink != "") {
-                                console.log("Project Link: " + projectLink)
-                                
-                                let linkHeader = document.createElement("h4")
-                                
-                                let link = document.createElement("a")
-                                link.classList.add("link-custom", "text-brand")
-                                link.textContent = "View on Github"
-                                link.href = projectLink
-                                link.target = "_blank"
+                    for (let disclaimer in project.description.disclaimers) {
+                        let disclaimerItem = document.createElement("li")
+                        disclaimerItem.textContent = project.description.disclaimers[disclaimer]
+                        disclaimerList.appendChild(disclaimerItem)
+                    }
 
-                                linkHeader.appendChild(link)
-                                linkContainer.appendChild(linkHeader)
-                                linkContainer.classList.add("mb-4", "ps-4", "pb-4")
-                            } 
+                    Object.entries(project.tech_stack).forEach(([label, src]) => {
+                        let techCard = document.createElement("div")
+                        techCard.classList.add("tech-card", "bg-base", "rounded-4")
+                        techCard.dataAos = "fade-up"
+                        techCard.dataAosDelay = "400"
 
-                            // for (let image in v_value.images) {
-                            //     let carouselCell = document.createElement("div")
-                            //     carouselCell.classList.add("carousel-cell")
+                        let techImg = document.createElement("img")
+                        techImg.classList.add("rounded-4")
+                        techImg.src = src
 
-                            //     let carouselImg = document.createElement("img")
-                            //     carouselImg.src = v_value.images[image]
+                        let techLabel = document.createElement("span")
+                        techLabel.classList.add("tech-label", "fw-bold")
+                        techLabel.textContent = label
 
-                            //     carouselCell.appendChild(carouselImg)
-                            //     carousel.appendChild(carouselCell)
-                            // }
+                        techCard.appendChild(techImg)
+                        techCard.appendChild(techLabel)
 
-                            loadImages(v_value.images).then(() => {
-                                console.log("inside then")
-
-                                if (v_value.images.length === 0) {
-                                    console.log("Inside 0 images condition")
-                                    document.getElementById("image-container").style.display = "None"
-                                    return
-                                }
-
-                                let flickity = new Flickity(carousel, {
-                                    cellAlign: 'center',
-                                    imagesLoaded: true,
-                                    percentPosition: false,
-                                    pageDots: true,
-                                    laztLoad: true
-                                });
-
-                                var imgs = carousel.querySelectorAll('.carousel-cell img');
-                                // get transform property
-                                var docStyle = document.documentElement.style;
-                                var transformProp = typeof docStyle.transform == 'string' ?
-                                    'transform' : 'WebkitTransform';
-
-                                flickity.on( 'scroll', function() {
-                                    flickity.slides.forEach( function( slide, i ) {
-                                        var img = imgs[i];
-                                        var x = ( slide.target + flickity.x ) * -1/2;
-                                        img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-                                    });
-                                });
-                            })
-
-                            throw new Error("Stop Iterating!!")
-                        }
+                        techContainer.appendChild(techCard)
                     })
-                })
-            })
 
-        function loadImages(images) {
-            return new Promise((resolve) => {
-                for (let image in images) {
-                    let carouselCell = document.createElement("div")
-                    carouselCell.classList.add("carousel-cell")
-    
-                    let carouselImg = document.createElement("img")
-                    carouselImg.src = images[image]
-    
-                    carouselCell.appendChild(carouselImg)
-                    carousel.appendChild(carouselCell)
+                    let projectLink = project.link
+                    if (projectLink !== "") {
+                        console.log("Project Link: " + projectLink)
+
+                        let linkHeader = document.createElement("h4")
+
+                        let link = document.createElement("a")
+                        link.classList.add("link-custom", "text-brand")
+                        link.textContent = "View on Github"
+                        link.href = projectLink
+                        link.target = "_blank"
+
+                        linkHeader.appendChild(link)
+                        linkContainer.appendChild(linkHeader)
+                        linkContainer.classList.add("mb-4", "ps-4", "pb-4")
+                    }
+
+                    for (let image in project.images) {
+                        let carouselCell = document.createElement("div")
+                        carouselCell.classList.add("carousel-item")
+                        if (image === "0") {
+                            carouselCell.classList.add("active")
+                        }
+                        carouselCell.style.height = "100%"
+
+                        let carouselImg = document.createElement("img")
+                        carouselImg.classList.add("d-block")
+                        console.log("image: " + image + ": " + project.images[image])
+                        carouselImg.src = project.images[image]
+                        carouselImg.style.width = "100%"
+                        carouselImg.style.height = "100%"
+                        carouselImg.style.objectFit = "contain"
+
+                        carouselCell.appendChild(carouselImg)
+                        carousel.appendChild(carouselCell)
+                    }
+
+                    throw new Error("Stop Iterating!!")
                 }
-                resolve()
             })
-        }
-
+        })
+    })
         
