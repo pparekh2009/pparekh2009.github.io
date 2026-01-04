@@ -76,7 +76,15 @@
                 "MySQL": "./assets/images/tech/mysql.png"
             },
             "title_image": "./assets/images/fullstack/pltd/PLTD_0.png",
-            "images": [],
+            "images": [
+                "./assets/images/fullstack/pltd/PLTD_1.png",
+                "./assets/images/fullstack/pltd/PLTD_2.png",
+                "./assets/images/fullstack/pltd/PLTD_3.png",
+                "./assets/images/fullstack/pltd/PLTD_4.png",
+                "./assets/images/fullstack/pltd/PLTD_5.png",
+                "./assets/images/fullstack/pltd/PLTD_6.png",
+                "./assets/images/fullstack/pltd/PLTD_7.png"
+            ],
             "link": "https://github.com/pparekh2009/Plated",
             "category": "fullstack"
         }
