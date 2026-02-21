@@ -87,12 +87,52 @@
             ],
             "link": "https://github.com/pparekh2009/Plated",
             "category": "fullstack"
+        },
+
+        {
+            "id": 3,
+            "name": "Ping",
+            "description": {
+                "short_desc": "Ping is a real-time one-to-one messaging application built to explore WebSocket-based communication and backend system design. The project demonstrates bidirectional message transfer, server-side persistence, and synchronized state between clients.",
+                "features": [
+                    "User Authentication: Secure sign-up and login powered by backend APIs.",
+                    "Real-time messaging: Send and receive real-time messages.",
+                    "1-on-1 Chats: Create and maintain chats with other users.",
+                    "Modern UI: Built with Kotlin, Jetpack, and MVVM for an intuitive experience."
+                ],
+                "benefits": [
+                    "Real-Time One-to-One Messaging: Enables instant communication between two users using persistent WebSocket connections.",
+                    "Reliable Message Persistence: Stores conversations securely in a relational database.",
+                    "Consistent Data Flow: Ensures synchronized message state between sender and receiver."
+                ],
+                "disclaimers": [
+                    "Ongoing Project: Ping is developed as a technical exploration project focused on real-time communication architecture.",
+                    "Feature Scope: The current implementation supports one-to-one messaging only."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "Compose": "./assets/images/tech/compose.png",
+                "Jetpack": "./assets/images/tech/jetpack.jpg",
+                "RetroFit": "./assets/images/tech/retrofit.jpg",
+                "Java": "./assets/images/tech/java.png",
+                "Spring Boot": "./assets/images/tech/springboot.png",
+                "PostgreSQL": "./assets/images/tech/postgresql.jpeg"
+            },
+            "title_image": "./assets/images/fullstack/ping/PING_0.png",
+            "images": [
+                "./assets/images/fullstack/ping/PING_1.png",
+                "./assets/images/fullstack/ping/PING_2.png",
+                "./assets/images/fullstack/ping/PING_3.png"
+            ],
+            "link": "https://github.com/pparekh2009/Ping",
+            "category": "fullstack"
         }
     ],
 
     "Android Projects": [
         {
-            "id": 3,
+            "id": 4,
             "name": "Brain Tumor Detection",
             "description": {
                 "short_desc": "Brain Tumor Detection is an Android application designed to assist users in identifying the presence of a tumor in brain X-ray images. Users can upload images from their gallery or capture them using their camera. The app utilizes a machine learning model to analyze the images and determine if a tumor is present.",
@@ -135,7 +175,7 @@
         },
 
         {
-            "id": 4,
+            "id": 5,
             "name": "Dynamic Island",
             "description": {
                 "short_desc": "Dynamic Island is an Android application that brings iPhone 15-like dynamic island functionality to Android phones. The app displays various types of information, such as currently playing songs, incoming and ongoing calls, and map directions. Additionally, it offers customization options, allowing users to change the size and position of the dynamic island and access many more settings.",
@@ -175,7 +215,7 @@
         },
 
         {
-            "id": 5,
+            "id": 6,
             "name": "Wacky Mirror Camera Filter",
             "description": {
                 "short_desc": "Wacky Mirror Camera Filter is a fun and creative camera app that adds a wavy effect to your videos. Users can record videos with this unique effect using both the front and rear cameras. The app also allows customization of the wave settings, including wave size and speed, providing a playful and dynamic recording experience.",
@@ -217,7 +257,7 @@
         },
 
         {
-            "id": 6,
+            "id": 7,
             "name": "Screen Lock",
             "description": {
                 "short_desc": "Screen Lock is an Android application designed to enhance the security of your phone with a range of features. It allows users to add locks to individual apps, set additional phone locks with various types such as pattern and passcode, and includes several advanced security options. One standout feature is the \"intruder selfie,\" which captures a photo after a set number of incorrect passcode attempts. The app also offers a secure vault for storing photos and videos, among other functionalities like app icon hiding, uninstall protection, and charging animations.",
@@ -262,7 +302,7 @@
         },
 
         {
-            "id": 7,
+            "id": 8,
             "name": "Pokedex",
             "description": {
                 "short_desc": "Pokedex is a straightforward Android application that displays a list of Pokémon fetched from the Pokémon API. The app includes a search functionality to easily find specific Pokémon. By clicking on a Pokémon, users can view detailed information about it. This app was developed primarily to learn and practice Jetpack Compose, a modern Android UI toolkit.",
@@ -301,7 +341,7 @@
         },
 
         {
-            "id": 8,
+            "id": 9,
             "name": "Video Background Removal",
             "description": {
                 "short_desc": "Video Background Removal is an innovative app offering two primary modes: video background removal and green screen removal. Users can choose to record videos directly using their camera or select existing videos from their gallery. In the video background removal mode, the app detects and replaces the background with a provided image. In the green screen removal mode, the app detects green color and replaces it with the selected image. ",
