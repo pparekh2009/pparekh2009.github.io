@@ -57,6 +57,17 @@ img {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.projects-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h3.text-brand {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 12px;
+    margin-top: 2rem;
+}
+
 /* AMBIENT BACKGROUND BLOBS */
 .blob {
     position: fixed;
@@ -297,6 +308,10 @@ img {
 .card-overlay p {
     color: var(--color-text);
     font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .card-custom:hover .card-overlay {
