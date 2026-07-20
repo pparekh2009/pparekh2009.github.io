@@ -1,20 +1,72 @@
 {
     "technologies": {
-        "android": {
-            "name": "Android",
-            "icon": "./assets/images/tech/android.png"
+        "mobile": {
+            "java": {
+                "name": "Java",
+                "icon": "./assets/images/tech/java.png"
+            },
+            "kotlin": {
+                "name": "Kotlin",
+                "icon": "./assets/images/tech/kotlin.jpg"
+            },
+            "android": {
+                "name": "Android",
+                "icon": "./assets/images/tech/android.png"
+            },
+            "jetpack": {
+                "name": "Jetpack",
+                "icon": "./assets/images/tech/jetpack.jpg"
+            },
+            "firebase": {
+                "name": "Firebase",
+                "icon": "./assets/images/tech/firebase.png"
+            }
         },
-        "android_studio": {
-            "name": "Android Studio",
-            "icon": "./assets/images/tech/android studio.jpg"
+        "backend": {
+            "springboot": {
+                "name": "Spring Boot",
+                "icon": "./assets/images/tech/springboot.png"
+            },
+            "python": {
+                "name": "Python",
+                "icon": "./assets/images/tech/python.png"
+            },
+            "mysql": {
+                "name": "MySQL",
+                "icon": "./assets/images/tech/mysql.png"
+            },
+            "postgresql": {
+                "name": "PostgreSQL",
+                "icon": "./assets/images/tech/postgresql.jpeg"
+            }
         },
-        "java": {
-            "name": "Java",
-            "icon": "./assets/images/tech/java.png"
+        "ml_data": {
+            "tensorflow": {
+                "name": "TensorFlow",
+                "icon": "./assets/images/tech/tensorflow.jpg"
+            },
+            "keras": {
+                "name": "Keras",
+                "icon": "./assets/images/tech/keras.jpg"
+            },
+            "numpy": {
+                "name": "NumPy",
+                "icon": "./assets/images/tech/numpy.jpg"
+            },
+            "pandas": {
+                "name": "Pandas",
+                "icon": "./assets/images/tech/pandas.jpg"
+            }
         },
-        "aws": {
-            "name": "AWS",
-            "icon": "./assets/images/tech/aws.png"
+        "devops_cloud": {
+            "git": {
+                "name": "Git",
+                "icon": "./assets/images/tech/git.png"
+            },
+            "aws": {
+                "name": "AWS",
+                "icon": "./assets/images/tech/aws.png"
+            }
         }
     }
 }
