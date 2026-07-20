@@ -303,6 +303,55 @@ img {
     transform: translateY(0);
 }
 
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    border-left: 1px solid var(--color-border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -30px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+}
+
+.timeline-date {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.timeline-content h5 {
+    margin-bottom: 4px;
+}
+
+/* CONTACT */
 #contact .form-control {
     background-color: var(--color-surface);
     border-color: var(--color-surface);
@@ -320,6 +369,19 @@ img {
 
 #contact input.form-control {
     height: 44px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 1.05rem;
+}
+
+.contact-info-item i {
+    color: var(--color-accent);
+    font-size: 1.3rem;
 }
 
 /* SOCIAL ICONS */
