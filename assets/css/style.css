@@ -8,7 +8,7 @@
     --color-accent: #f97316;
     --color-accent-hover: #fb923c;
     --color-accent-dim: rgba(249, 115, 22, 0.12);
-    --sidebar-width: 210px;
+    --sidebar-width: 260px;
     --font-base: "Space Grotesk", sans-serif;
 }
 
@@ -80,33 +80,68 @@ img {
 
 .navbar {
     background-color: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+}
+
+.navbar-name {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
 }
 
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    border-left: 3px solid transparent;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: var(--color-accent);
+    color: var(--color-text);
+    border-left-color: var(--color-accent);
 }
 
 .navbar .nav-link.active {
-    color: var(--color-accent);
+    color: var(--color-text);
+    border-left-color: var(--color-accent);
 }
 
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
         width: var(--sidebar-width);
-        background: linear-gradient(rgba(28, 28, 30, 0.8), rgba(28, 28, 30, 0.9)), url(../images/sidebar-img.jpg);
-        background-size: cover;
-        background-position: center;
+    }
+
+    .navbar .container {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        margin-bottom: 2rem;
+        text-align: center;
     }
 
     .navbar-brand img {
-        border: 8px solid var(--color-accent);
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px var(--color-accent);
+        margin-bottom: 16px;
+    }
+
+    .nav-item-social {
+        margin-top: 2rem;
     }
 
     /* CONTENT WRAPPER */
@@ -188,15 +223,24 @@ img {
 }
 
 /* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0;
+}
+
 .social-icons a {
-    width: 40px;
-    height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface);
-    border-radius: 100px;
-    font-size: 24px;
+    color: var(--color-text-muted);
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: var(--color-accent);
 }
 
 .tech-container {
