@@ -8,31 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 let validItems = value.filter(v_value => Number.isInteger(v_value.id))
                 if (validItems.length === 0) return
 
-                let rowElement = document.createElement("div")
-                rowElement.className += "row gy-4 mt-5"
+                let categorySection = document.createElement("div")
+                categorySection.className += "projects-category mt-5"
 
-                let projectCatHeaderContainer = document.createElement("div")
+                let categoryHeader = document.createElement("h3")
+                categoryHeader.className += "text-brand"
+                categoryHeader.textContent = key
+                categorySection.appendChild(categoryHeader)
 
-                let projectCatHeader = document.createElement("h3")
-                projectCatHeader.className += "text-brand"
-                projectCatHeader.textContent = key
-
-                projectCatHeaderContainer.appendChild(projectCatHeader)
-                rowElement.appendChild(projectCatHeaderContainer)
+                let gridElement = document.createElement("div")
+                gridElement.className += "projects-grid"
 
                 validItems.forEach((v_value) => {
-                    let firstDiv = document.createElement("div")
-                    firstDiv.className += "col-md-6"
+                    let cardDiv = document.createElement("div")
+                    cardDiv.className += "card-custom rounded-4 bg-base"
 
-                    let secondDiv = document.createElement("div")
-                    secondDiv.className += "card-custom rounded-4 bg-base"
-
-                    let thirdDiv = document.createElement("div")
-                    thirdDiv.className += "card-custom-image rounded-4"
+                    let imageDiv = document.createElement("div")
+                    imageDiv.className += "card-custom-image rounded-4"
 
                     let img = document.createElement("img")
                     img.className += "rounded-4"
                     img.src = v_value.title_image
+                    img.alt = v_value.name
 
                     let overlay = document.createElement("div")
                     overlay.className += "card-overlay"
@@ -54,21 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     readMoreLink.className += "link-custom"
                     readMoreLink.textContent = "Read More"
 
-                    thirdDiv.appendChild(img)
-                    thirdDiv.appendChild(overlay)
-                    secondDiv.appendChild(thirdDiv)
+                    imageDiv.appendChild(img)
+                    imageDiv.appendChild(overlay)
+                    cardDiv.appendChild(imageDiv)
 
                     cardContainer.appendChild(projectHeader)
                     cardContainer.appendChild(readMoreLink)
 
-                    secondDiv.appendChild(cardContainer)
+                    cardDiv.appendChild(cardContainer)
 
-                    firstDiv.appendChild(secondDiv)
-
-                    rowElement.appendChild(firstDiv)
+                    gridElement.appendChild(cardDiv)
                 })
 
-                projectsContainer.appendChild(rowElement)
+                categorySection.appendChild(gridElement)
+                projectsContainer.appendChild(categorySection)
             })
         })
         .catch(error => console.error("Error fetching JSON data: ", error))

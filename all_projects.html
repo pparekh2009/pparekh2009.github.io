@@ -12,74 +12,26 @@
 	<link rel="stylesheet" href="./assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+<body>
 
 	<!-- ---------------------------- AMBIENT BLOBS ----------------------------- -->
 	<div class="blob blob-1"></div>
 	<div class="blob blob-2"></div>
 	<!-- ---------------------------- AMBIENT BLOBS ----------------------------- -->
 
-	<!-- ------------------------------- NAVBAR -------------------------------- -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-		<div class="container flex-lg-column">
-			<a class="navbar-brand mx-lg-auto" href="index.html#home">
-				<img src="./assets/images/photo_3.jpg" class="d-none d-lg-block rounded-circle" alt="Priyansh Parekh">
-				<span class="navbar-name">Priyansh Parekh</span>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto flex-lg-column">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#work">Work</a>
-					</li>
-					<li>
-						<a class="nav-link" href="index.html#skills">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#contact">Contact</a>
-					</li>
+	<div class="projects-page-container px-lg-5 py-5">
+		<a href="./index.html" class="back-link"><i class="las la-arrow-left"></i> Home</a>
 
-					<li class="nav-item-social">
-						<div class="social-icons">
-							<a href="mailto:parekhpriyansh20@gmail.com"><i class="las la-at"></i></a>
-							<a href="https://twitter.com/parekhpriyansh9" target="_blank"><i class="lab la-twitter"></i></a>
-							<a href="https://www.linkedin.com/in/priyansh-parekh/" target="_blank"><i class="lab la-linkedin"></i></a>
-							<a href="https://github.com/pparekh2009" target="_blank"><i class="lab la-github"></i></a>
-						</div>
-					</li>
-
-				</ul>
+		<div class="row pb-4" data-aos="fade-up">
+			<div class="col-lg-8">
+				<h6 class="text-brand">WORK</h6>
+				<h1>All Projects</h1>
+				<p class="lead mt-2">A complete list of things I've built.</p>
 			</div>
 		</div>
-	</nav>
-	<!-- ------------------------------- NAVBAR -------------------------------- -->
 
-	<!-- --------------------------- CONTENT WRAPPER --------------------------- -->
-	<div id="content-wrapper">
-		<section id="work" class="projects-section px-lg-5">
-			<div class="container" id="projects-list">
-
-				<div class="row pb-4" data-aos="fade-up">
-					<div class="col-lg-8">
-						<h6 class="text-brand">WORK</h6>
-						<h1>All Projects</h1>
-						<p class="lead mt-2">A complete list of things I've built.</p>
-					</div>
-				</div>
-
-			</div>
-		</section>
+		<div id="projects-list"></div>
 	</div>
-	<!-- --------------------------- CONTENT WRAPPER --------------------------- -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/aos.js"></script>

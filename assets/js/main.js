@@ -1,5 +1,3 @@
-AOS.init();
-
 // You can also pass an optional settings object
 // below listed default settings
 AOS.init({
@@ -51,41 +49,16 @@ AOS.init({
     type();
 })();
 
-// Stats row count-up on scroll into view
+// Close the mobile nav menu after tapping a section link
 (function () {
-    const statsRow = document.querySelector('.stats-row');
-    if (!statsRow) return;
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (!navbarCollapse) return;
 
-    const numbers = statsRow.querySelectorAll('.stat-number');
-    let hasAnimated = false;
-
-    function animateCount(el) {
-        const target = parseInt(el.dataset.target, 10);
-        const duration = 1200;
-        const startTime = performance.now();
-
-        function step(now) {
-            const progress = Math.min((now - startTime) / duration, 1);
-            el.textContent = Math.floor(progress * target);
-            if (progress < 1) {
-                requestAnimationFrame(step);
-            } else {
-                el.textContent = target;
-            }
-        }
-
-        requestAnimationFrame(step);
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting && !hasAnimated) {
-                hasAnimated = true;
-                numbers.forEach(animateCount);
-                observer.disconnect();
+    document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
             }
         });
-    }, { threshold: 0.3 });
-
-    observer.observe(statsRow);
+    });
 })();

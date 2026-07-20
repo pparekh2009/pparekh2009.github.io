@@ -380,5 +380,59 @@
             "link": "",
             "category": "android"
         }
+    ],
+
+    "Template": [
+        {
+            "id": "int",
+            "title": "string",
+            "tagline": "string",
+
+            "meta": {
+                "platform": "string",
+                "status": "string",
+                "role": "string",
+                "duration": "string"
+            },
+
+            "overview": "string",
+
+            "problem": "string",
+            "solution": "string",
+
+            "capabilities": [
+                "string"
+            ],
+
+            "impact": "string",
+
+            "technical": {
+                "summary": "string",
+                "highlights": [
+                    "string"
+                ]
+            },
+
+            "notes": "string",
+
+            "links": {
+                "github": "string",
+                "live": "string"
+            },
+
+            "media": {
+                "cover": "string",
+                "images": [
+                    "string"
+                ]
+            },
+
+            "techStack": [
+                {
+                    "name": "string",
+                    "icon": "string"
+                }
+            ]
+        }
     ]
 }

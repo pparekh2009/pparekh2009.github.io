@@ -66,6 +66,7 @@ fetch('./assets/json/projects.json')
                         let techImg = document.createElement("img")
                         techImg.classList.add("rounded-4")
                         techImg.src = src
+                        techImg.alt = label
 
                         let techLabel = document.createElement("span")
                         techLabel.classList.add("tech-label", "fw-bold")
@@ -99,6 +100,7 @@ fetch('./assets/json/projects.json')
                         let carouselImg = document.createElement("img")
                         carouselImg.classList.add("d-block")
                         carouselImg.src = project.images[image]
+                        carouselImg.alt = project.name + " screenshot " + (parseInt(image) + 1)
 
                         carouselCell.appendChild(carouselImg)
                         carousel.appendChild(carouselCell)
