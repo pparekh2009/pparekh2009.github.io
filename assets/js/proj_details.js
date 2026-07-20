@@ -1,6 +1,5 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get("id")
-console.log(id)
 
 let projectHeader = document.getElementById("project-header")
 let titleImage = document.getElementById("title-image")
@@ -8,7 +7,7 @@ let projectDescription = document.getElementById("project-description")
 let featureList = document.getElementById("feature-list")
 let benefitList = document.getElementById("benefit-list")
 let disclaimerList = document.getElementById("disclaimer-list")
-let techContainer = document.getElementsByClassName("tech-container")[0]
+let techContainer = document.getElementById("tech-stack-grid")
 let linkContainer = document.getElementById("link-container")
 let carousel = document.getElementById("carousel-wrapper")
 
@@ -18,29 +17,32 @@ fetch('./assets/json/projects.json')
 
         Object.entries(data).forEach(([category, projects]) => {
 
-            console.log("Key: ")
-            console.log(category)
-            console.log("Value: ")
-            console.log(projects)
-
             Object.entries(projects).forEach(([_, project]) => {
 
-                console.log("Project id: " + project.id)
-
                 if (project.id === parseInt(id)) {
-                    console.log("Id: " + project.name)
 
                     projectHeader.textContent = project.name
                     document.title = project.name
 
                     titleImage.src = project.title_image
+                    titleImage.alt = project.name
 
                     projectDescription.textContent = project.description.short_desc
 
                     for (let feature in project.description.features) {
-                        let featureItem = document.createElement("li")
-                        featureItem.textContent = project.description.features[feature]
-                        featureList.appendChild(featureItem)
+                        let featureCard = document.createElement("div")
+                        featureCard.classList.add("feature-card")
+                        featureCard.setAttribute("data-aos", "fade-up")
+
+                        let featureIcon = document.createElement("i")
+                        featureIcon.classList.add("las", "la-check-circle")
+
+                        let featureText = document.createElement("span")
+                        featureText.textContent = project.description.features[feature]
+
+                        featureCard.appendChild(featureIcon)
+                        featureCard.appendChild(featureText)
+                        featureList.appendChild(featureCard)
                     }
 
                     for (let benefit in project.description.benefits) {
@@ -77,19 +79,14 @@ fetch('./assets/json/projects.json')
 
                     let projectLink = project.link
                     if (projectLink !== "") {
-                        console.log("Project Link: " + projectLink)
-
-                        let linkHeader = document.createElement("h4")
-
                         let link = document.createElement("a")
-                        link.classList.add("link-custom", "text-brand")
-                        link.textContent = "View on Github"
+                        link.classList.add("btn", "btn-brand")
+                        link.textContent = "View on GitHub"
                         link.href = projectLink
                         link.target = "_blank"
 
-                        linkHeader.appendChild(link)
-                        linkContainer.appendChild(linkHeader)
-                        linkContainer.classList.add("mb-4", "ps-4", "pb-4")
+                        linkContainer.appendChild(link)
+                        linkContainer.classList.add("mt-4")
                     }
 
                     for (let image in project.images) {
@@ -98,15 +95,10 @@ fetch('./assets/json/projects.json')
                         if (image === "0") {
                             carouselCell.classList.add("active")
                         }
-                        carouselCell.style.height = "100%"
 
                         let carouselImg = document.createElement("img")
                         carouselImg.classList.add("d-block")
-                        console.log("image: " + image + ": " + project.images[image])
                         carouselImg.src = project.images[image]
-                        carouselImg.style.width = "100%"
-                        carouselImg.style.height = "100%"
-                        carouselImg.style.objectFit = "contain"
 
                         carouselCell.appendChild(carouselImg)
                         carousel.appendChild(carouselCell)
@@ -117,4 +109,4 @@ fetch('./assets/json/projects.json')
             })
         })
     })
-        
+    .catch(error => console.error("Error fetching JSON data: ", error))

@@ -12,83 +12,64 @@
 	<link rel="stylesheet" href="./assets/css/aos.css">
 	<link rel="stylesheet" href="./assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-
-    <style>
-        #title-image {
-            height: 30vh;
-            filter: blur(4px);
-        }
-
-        #project-header {
-            color: var(--color-surface);
-            padding: 10px;
-        }
-
-        .features-container, .benefits-container, .disclaimers-container {
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
-    
-    <div class="position-relative overflow-hidden">
-        <img id="title-image" class="w-100 object-fit-cover" alt="title_image">
-        <h1 id="project-header" class="position-absolute bottom-0 m-auto w-100"></h1>
+
+    <div class="container px-lg-5 pt-4">
+        <a href="./all_projects.html" class="back-link"><i class="las la-arrow-left"></i> All Projects</a>
     </div>
 
-    <div class="desc-container m-4">
-        <h2>About</h2>
-        <p id="project-description"></p>
-
-        <div class="features-container">
-            <h3>Features</h3>
-            <ul id="feature-list"></ul>
-        </div>
-
-        <div class="benefits-container">
-            <h3>Benefits</h3>
-            <ul id="benefit-list"></ul>
-        </div>
-
-        <div class="disclaimers-container">
-            <h3>Disclaimers</h3>
-            <ul id="disclaimer-list"></ul>
+    <div class="proj-hero">
+        <img id="title-image" class="proj-hero-img" alt="">
+        <div class="proj-hero-overlay">
+            <h1 id="project-header"></h1>
         </div>
     </div>
 
-    <div class="row gy-5 m-3">
+    <div class="container px-lg-5 pb-5">
 
-        <h2>Tech Stack</h2>
+        <div class="desc-container mt-4">
+            <h2>About</h2>
+            <p id="project-description"></p>
 
-        <div class="col-lg-6 mb-5">
-            <div class="tech-container row gy-2 d-lg-grid">
-                <!-- <div class="tech-card bg-base rounded-4" data-aos="fade-up" data-aos-delay="400">
-                    <img class="rounded-4" src="./assets/images/tech/java.png">
-                    <span class="tech-label fw-bold">Java</span>
-                </div> -->
+            <div class="features-container">
+                <h3>Features</h3>
+                <div class="features-grid" id="feature-list"></div>
             </div>
+
+            <div class="benefits-container">
+                <h3>Benefits</h3>
+                <ul id="benefit-list"></ul>
+            </div>
+
+            <div class="disclaimers-container">
+                <h3>Disclaimers</h3>
+                <ul id="disclaimer-list"></ul>
+            </div>
+
+            <div class="tech-stack-container">
+                <h3>Tech Stack</h3>
+                <div class="tech-grid" id="tech-stack-grid"></div>
+            </div>
+
+            <div id="link-container"></div>
         </div>
 
-    </div>
+        <div class="proj-carousel-wrapper mt-5">
+            <div id="project-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div id="carousel-wrapper" class="carousel-inner"></div>
 
-    <div id="link-container">
-        <!-- <h4><a class="link-custom text-brand">View on Github</a></h4> -->
-    </div>
-
-    <div class="carousel-wrapper justify-content-center" id="image-container" style="width: 400px; height: 600px; overflow: hidden">
-        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="height: 100%">
-            <div id="carousel-wrapper" class="carousel-inner" style="height: 100%">
-
-                <a class="carousel-control-prev" role="button" data-slide="prev">
+                <a class="carousel-control-prev" role="button" data-bs-target="#project-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="visually-hidden">Previous</span>
                 </a>
-                <a class="carousel-control-next" role="button" data-slide="next">
+                <a class="carousel-control-next" role="button" data-bs-target="#project-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="visually-hidden">Next</span>
                 </a>
             </div>
-      </div>
+        </div>
+
     </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
