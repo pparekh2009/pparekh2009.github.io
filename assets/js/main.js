@@ -14,3 +14,78 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// Hero subtitle typing animation
+(function () {
+    const el = document.getElementById('typing-subtitle');
+    if (!el) return;
+
+    const text = 'SOFTWARE DEVELOPER';
+    const typeSpeed = 100;
+    const eraseSpeed = 60;
+    const holdTime = 1800;
+    const pauseTime = 600;
+
+    let charIndex = 0;
+
+    function type() {
+        el.textContent = text.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex < text.length) {
+            setTimeout(type, typeSpeed);
+        } else {
+            setTimeout(erase, holdTime);
+        }
+    }
+
+    function erase() {
+        charIndex--;
+        el.textContent = text.slice(0, charIndex);
+        if (charIndex > 0) {
+            setTimeout(erase, eraseSpeed);
+        } else {
+            setTimeout(type, pauseTime);
+        }
+    }
+
+    type();
+})();
+
+// Stats row count-up on scroll into view
+(function () {
+    const statsRow = document.querySelector('.stats-row');
+    if (!statsRow) return;
+
+    const numbers = statsRow.querySelectorAll('.stat-number');
+    let hasAnimated = false;
+
+    function animateCount(el) {
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1200;
+        const startTime = performance.now();
+
+        function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            el.textContent = Math.floor(progress * target);
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target;
+            }
+        }
+
+        requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && !hasAnimated) {
+                hasAnimated = true;
+                numbers.forEach(animateCount);
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(statsRow);
+})();
