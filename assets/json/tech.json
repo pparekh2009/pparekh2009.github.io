@@ -1,16 +1,20 @@
 {
-    "technologies": [
-        {
-            "Java": "./assets/images/java.png"
+    "technologies": {
+        "android": {
+            "name": "Android",
+            "icon": "./assets/images/tech/android.png"
         },
-        "Kotlin",
-        "Compose",
-        "Android",
-        "Python",
-        "HTML",
-        "CSS",
-        "Git",
-        "SQL",
-        "Jupyter"
-    ]
+        "android_studio": {
+            "name": "Android Studio",
+            "icon": "./assets/images/tech/android studio.jpg"
+        },
+        "java": {
+            "name": "Java",
+            "icon": "./assets/images/tech/java.png"
+        },
+        "aws": {
+            "name": "AWS",
+            "icon": "./assets/images/tech/aws.png"
+        }
+    }
 }

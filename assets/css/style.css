@@ -1,35 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
-
 :root {
-    --color-body: #b6cbce;
-    --color-heading: #eef3db;
-    --color-base: #033f47;
-    --color-base2: #022a30;
-    --color-brand: #e0f780;
-    --color-brand2: #deff58;
-    --sidebar-width: 240px;
-    --font-base: "Bai Jamjuree";
+    --color-bg: #0c0c0f;
+    --color-surface: #1c1c1e;
+    --color-surface-2: #2c2c2e;
+    --color-border: #27272a;
+    --color-text: #f4f4f5;
+    --color-text-muted: #a1a1aa;
+    --color-accent: #f97316;
+    --color-accent-hover: #fb923c;
+    --color-accent-dim: rgba(249, 115, 22, 0.12);
+    --sidebar-width: 210px;
+    --font-base: "Space Grotesk", sans-serif;
 }
 
 body {
-    background-color: var(--color-base2);
-    color: var(--color-body);
-    font-family: var(--font-base), sans-serif ;
+    background-color: var(--color-bg);
+    color: var(--color-text-muted);
+    font-family: var(--font-base);
 }
 
 h1, h2, h3, h4, h5, h6 {
-      color: var(--color-heading);
+      color: var(--color-text);
       font-weight: 700;
 }
 
 a {
     text-decoration: none;
-    color: var(--color-body);
+    color: var(--color-text-muted);
     transition: all 0.4s ease;
 }
 
 a:hover {
-    color: var(--color-brand);
+    color: var(--color-accent);
 }
 
 img {
@@ -37,16 +38,17 @@ img {
 }
 
 .text-brand {
-    color: var(--color-brand);
+    color: var(--color-accent);
 }
 
 .bg-base {
-    background-color: var(--color-base);
+    background-color: var(--color-surface);
 }
 
 .full-height {
-    min-height: 100vh;
-    height: 100%;
+    /*min-height: 100vh;*/
+    height: 100vh;
+    /*height: 100%;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -60,7 +62,7 @@ img {
 }
 
 .shadow-effect:hover {
-    box-shadow: -6px 6px 0 0 var(--color-brand);
+    box-shadow: -6px 6px 0 0 var(--color-accent);
 }
 
 .iconbox {
@@ -70,14 +72,14 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    background-color: var(--color-brand);
-    color: var(--color-base);
+    background-color: var(--color-accent);
+    color: var(--color-surface);
 }
 
 /* NAVBAR */
 
 .navbar {
-    background-color: var(--color-base);
+    background-color: var(--color-surface);
 }
 
 .navbar .nav-link {
@@ -87,24 +89,24 @@ img {
 }
 
 .navbar .nav-link:hover {
-    color: var(--color-brand);
+    color: var(--color-accent);
 }
 
 .navbar .nav-link.active {
-    color: var(--color-brand);
+    color: var(--color-accent);
 }
 
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
         width: var(--sidebar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.9)), url(../images/sidebar-img.jpg);
+        background: linear-gradient(rgba(28, 28, 30, 0.8), rgba(28, 28, 30, 0.9)), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
     }
 
     .navbar-brand img {
-        border: 8px solid var(--color-brand);
+        border: 8px solid var(--color-accent);
     }
 
     /* CONTENT WRAPPER */
@@ -120,16 +122,16 @@ img {
 }
 
 .btn-brand {
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
-    color: var(--color-base);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-surface);
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
-    background-color: var(--color-brand2);
-    color: var(--color-base);
-    border-color: var(--color-brand2);
+    background-color: var(--color-accent-hover);
+    color: var(--color-surface);
+    border-color: var(--color-accent-hover);
 }
 
 .link-custom {
@@ -141,7 +143,7 @@ img {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--color-brand);
+    background-color: var(--color-accent);
     left: 0;
     position: absolute;
     top: 110%;
@@ -167,18 +169,18 @@ img {
 }
 
 #contact .form-control {
-    background-color: var(--color-base);
-    border-color: var(--color-base);
-    color: var(--color-body);
+    background-color: var(--color-surface);
+    border-color: var(--color-surface);
+    color: var(--color-text-muted);
 }
 
 #contact .form-control:focus {
-    border-color: var(--color-brand);
+    border-color: var(--color-accent);
     box-shadow: none;
 }
 
 #contact .form-control::placeholder {
-    color: var(--color-body);
+    color: var(--color-text-muted);
 }
 
 #contact input.form-control {
@@ -192,7 +194,7 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-base);
+    background-color: var(--color-surface);
     border-radius: 100px;
     font-size: 24px;
 }
@@ -222,6 +224,12 @@ img {
     }
 }
 
+@media (min-width: 2000px) {
+    .tech-container {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
 .tech-card {
     width: 100px;
     height: 100px;
@@ -237,8 +245,8 @@ img {
 
 .tech-card .tech-label {
     visibility: hidden;
-    background-color: var(--color-brand);
-    color: var(--color-base);
+    background-color: var(--color-accent);
+    color: var(--color-surface);
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -305,7 +313,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 5px solid var(--color-brand);
+    border: 5px solid var(--color-accent);
     border-radius: 20px;
 }
 
