@@ -41,6 +41,13 @@ img {
     color: var(--color-accent);
 }
 
+.eyebrow-label {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
 .bg-base {
     background-color: var(--color-surface);
 }
