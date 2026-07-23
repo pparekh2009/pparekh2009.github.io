@@ -49,6 +49,20 @@ AOS.init({
     type();
 })();
 
+// On devices with no hover (touch), tap a project card image to reveal its
+// description, tap again to close it. Delegated on document since some cards
+// (all_projects.html) are created dynamically after this script runs.
+(function () {
+    if (!window.matchMedia('(hover: none)').matches) return;
+
+    document.addEventListener('click', (e) => {
+        const image = e.target.closest('.card-custom-image');
+        if (image) {
+            image.classList.toggle('overlay-open');
+        }
+    });
+})();
+
 // Close the mobile nav menu after tapping a section link
 (function () {
     const navbarCollapse = document.getElementById('navbarNav');
