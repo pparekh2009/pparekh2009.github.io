@@ -53,9 +53,7 @@ img {
 }
 
 .full-height {
-    /*min-height: 100vh;*/
-    height: 100vh;
-    /*height: 100%;*/
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -67,6 +65,8 @@ img {
 .projects-page-container {
     max-width: 1680px;
     margin: 0 auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .projects-grid {
@@ -485,15 +485,27 @@ h3.text-brand {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .tech-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .tech-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 1000px) {
     .tech-grid {
         grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .tech-grid {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 
