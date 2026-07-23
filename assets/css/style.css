@@ -237,6 +237,29 @@ h3.text-brand {
     border-color: var(--color-accent-hover);
 }
 
+.btn-brand:disabled {
+    background-color: var(--color-accent-dim);
+    border-color: var(--color-accent-dim);
+    color: var(--color-text-muted);
+}
+
+.submit-message {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.submit-message-success {
+    color: var(--color-accent);
+    background-color: var(--color-accent-dim);
+}
+
+.submit-message-error {
+    color: #f87171;
+    background-color: rgba(248, 113, 113, 0.12);
+}
+
 .link-custom {
     font-weight: 700;
     position: relative;
