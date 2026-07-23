@@ -63,6 +63,14 @@ AOS.init({
     });
 })();
 
+// Footer copyright year
+(function () {
+    const el = document.getElementById('footer-year');
+    if (!el) return;
+
+    el.textContent = new Date().getFullYear();
+})();
+
 // Close the mobile nav menu after tapping a section link
 (function () {
     const navbarCollapse = document.getElementById('navbarNav');

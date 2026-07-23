@@ -60,8 +60,8 @@ fetch('./assets/json/projects.json')
                     Object.entries(project.tech_stack).forEach(([label, src]) => {
                         let techCard = document.createElement("div")
                         techCard.classList.add("tech-card", "bg-base", "rounded-4")
-                        techCard.dataAos = "fade-up"
-                        techCard.dataAosDelay = "400"
+                        techCard.setAttribute("data-aos", "fade-up")
+                        techCard.setAttribute("data-aos-delay", "400")
 
                         let techImg = document.createElement("img")
                         techImg.classList.add("rounded-4")

@@ -9,46 +9,46 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (validItems.length === 0) return
 
                 let categorySection = document.createElement("div")
-                categorySection.className += "projects-category mt-5"
+                categorySection.classList.add("projects-category", "mt-5")
 
                 let categoryHeader = document.createElement("h3")
-                categoryHeader.className += "text-brand"
+                categoryHeader.classList.add("text-brand")
                 categoryHeader.textContent = key
                 categorySection.appendChild(categoryHeader)
 
                 let gridElement = document.createElement("div")
-                gridElement.className += "projects-grid"
+                gridElement.classList.add("projects-grid")
 
                 validItems.forEach((v_value) => {
                     let cardDiv = document.createElement("div")
-                    cardDiv.className += "card-custom rounded-4 bg-base"
+                    cardDiv.classList.add("card-custom", "rounded-4", "bg-base")
 
                     let imageDiv = document.createElement("div")
-                    imageDiv.className += "card-custom-image rounded-4"
+                    imageDiv.classList.add("card-custom-image", "rounded-4")
 
                     let img = document.createElement("img")
-                    img.className += "rounded-4"
+                    img.classList.add("rounded-4")
                     img.src = v_value.title_image
                     img.alt = v_value.name
 
                     let overlay = document.createElement("div")
-                    overlay.className += "card-overlay"
+                    overlay.classList.add("card-overlay")
 
                     let overlayText = document.createElement("p")
-                    overlayText.className += "mb-0"
+                    overlayText.classList.add("mb-0")
                     overlayText.textContent = v_value.description.short_desc
 
                     overlay.appendChild(overlayText)
 
                     let cardContainer = document.createElement("div")
-                    cardContainer.className += "card-custom-content p-4"
+                    cardContainer.classList.add("card-custom-content", "p-4")
 
                     let projectHeader = document.createElement("h4")
                     projectHeader.textContent = v_value.name
 
                     let readMoreLink = document.createElement("a")
                     readMoreLink.href = "./project_details.html?id=" + v_value.id
-                    readMoreLink.className += "link-custom"
+                    readMoreLink.classList.add("link-custom")
                     readMoreLink.textContent = "Read More"
 
                     imageDiv.appendChild(img)

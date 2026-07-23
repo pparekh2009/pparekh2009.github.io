@@ -14,6 +14,8 @@ document.getElementById("contact-form").addEventListener('submit', async (e) => 
 
     submitBtn.disabled = true;
 
+    const errorMessage = `<p class="submit-message submit-message-error">Something went wrong. Please try again.</p>`;
+
     try {
         const response = await fetch("https://rbrg4oz3n5mvqwsywjm4raycoe0hdiai.lambda-url.us-east-1.on.aws/", {
             method: "POST",
@@ -25,10 +27,10 @@ document.getElementById("contact-form").addEventListener('submit', async (e) => 
             messageContainer.innerHTML = `<p class="submit-message submit-message-success">Your message was sent successfully.</p>`;
             form.reset();
         } else {
-            messageContainer.innerHTML = `<p class="submit-message submit-message-error">Something went wrong. Please try again.</p>`;
+            messageContainer.innerHTML = errorMessage;
         }
     } catch (err) {
-        messageContainer.innerHTML = `<p class="submit-message submit-message-error">Something went wrong. Please try again.</p>`;
+        messageContainer.innerHTML = errorMessage;
     } finally {
         submitBtn.disabled = false;
     }
