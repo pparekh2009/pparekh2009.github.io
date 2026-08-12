@@ -19,7 +19,7 @@ fetch('./assets/json/projects.json')
 
             Object.entries(projects).forEach(([_, project]) => {
 
-                if (project.id === parseInt(id)) {
+                if (project.id === id) {
 
                     projectHeader.textContent = project.name
                     document.title = project.name

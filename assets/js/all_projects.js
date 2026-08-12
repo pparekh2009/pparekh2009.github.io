@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let projectsContainer = document.getElementById("projects-list")
 
             Object.entries(data).forEach(([key, value]) => {
-                let validItems = value.filter(v_value => Number.isInteger(v_value.id))
+                let validItems = value.filter(v_value => typeof v_value.id === "string" && v_value.id.length > 0)
                 if (validItems.length === 0) return
 
                 let categorySection = document.createElement("div")
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     projectHeader.textContent = v_value.name
 
                     let readMoreLink = document.createElement("a")
-                    readMoreLink.href = "./project_details.html?id=" + v_value.id
+                    readMoreLink.href = "./project_details.html?id=" + encodeURIComponent(v_value.id)
                     readMoreLink.classList.add("link-custom")
                     readMoreLink.textContent = "Read More"
 
