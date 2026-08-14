@@ -90,6 +90,11 @@ fetch('./assets/json/projects.json')
                         linkContainer.classList.add("mt-4")
                     }
 
+                    if (project.images.length === 0) {
+                        let projectCarousel = document.getElementById("project-carousel")
+                        projectCarousel.style.display = "none"
+                    }
+
                     for (let image in project.images) {
                         let carouselCell = document.createElement("div")
                         carouselCell.classList.add("carousel-item")

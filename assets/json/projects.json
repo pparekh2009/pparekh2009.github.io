@@ -379,6 +379,77 @@
             ],
             "link": "",
             "category": "android"
+        },
+
+        {
+            "id": "f7x1t3n8",
+            "name": "Repbook",
+            "description": {
+                "short_desc": "Repbook is a workout tracker and scheduler Android app that lets you build custom workouts, assign them to specific days of the week, and follow along during your workout with a guided current-exercise and current-set view complete with rest timers between sets and exercises.",
+                "features": [
+                    "Custom Workouts: Create workouts by adding exercises with customizable sets, tracking weights and reps or time.",
+                    "Weekly Scheduling: Assign workouts to specific days of the week, shown right on the homepage.",
+                    "Guided Workout Mode: Start a workout and follow along with the current exercise and current set in real time.",
+                    "Rest Timer: Built-in rest timer between sets and between exercises to keep your workout paced.",
+                    "Workout History: Review your past workout sessions at any time."
+                ],
+                "benefits": [
+                    "Structured Training: Helps you plan and stick to a consistent weekly workout routine.",
+                    "Guided Execution: Removes the guesswork during a workout by showing exactly what's next and when to rest.",
+                    "Progress Tracking: Workout history makes it easy to look back on past sessions and stay consistent."
+                ],
+                "disclaimers": [
+                    "Learning Project: Repbook was built as a Claude Code learning project, with the entire app generated using Claude Code.",
+                    "Data Accuracy: Set, rep, and timer values are based on user input; incorrect entries may affect tracked results."
+                ]
+            },
+            "tech_stack": {
+                "Kotlin": "./assets/images/tech/kotlin.jpg",
+                "Compose": "./assets/images/tech/compose.png",
+                "Room": "./assets/images/tech/room.png"
+            },
+            "title_image": "./assets/images/android/rb/RB_0.png",
+            "images": [
+                "./assets/images/android/rb/RB_1.png",
+                "./assets/images/android/rb/RB_2.png",
+                "./assets/images/android/rb/RB_3.png",
+                "./assets/images/android/rb/RB_4.png",
+                "./assets/images/android/rb/RB_5.png"
+            ],
+            "link": "https://github.com/pparekh2009/RepBook",
+            "category": "android"
+        }
+    ],
+
+    "Other Projects": [
+        {
+            "id": "n8v4c1w6",
+            "name": "Remindly",
+            "description": {
+                "short_desc": "Remindly is a small MCP (Model Context Protocol) server learning project built with Spring AI. It exposes a simple todo list with CRUD operations as MCP tools, backed by a file-based H2 database.",
+                "features": [
+                    "MCP Tools: Todo CRUD operations (create, read, update, delete) exposed as MCP tools using Spring AI's MCP support.",
+                    "Persistent Storage: Todos are stored in a file-based H2 database."
+                ],
+                "benefits": [
+                    "Learning Exercise: Hands-on exploration of exposing backend operations as MCP tools using Spring AI, rather than a full protocol implementation."
+                ],
+                "disclaimers": [
+                    "Learning Project: Remindly is a small learning project built to explore Spring AI's MCP tool support, not a production-ready application.",
+                    "Scope: Functionality is limited to basic todo CRUD operations."
+                ]
+            },
+            "tech_stack": {
+                "Java": "./assets/images/tech/java.png",
+                "Spring Boot": "./assets/images/tech/springboot.png",
+                "Spring AI": "./assets/images/tech/spring ai.png",
+                "MCP": "./assets/images/tech/mcp.png",
+                "H2": "./assets/images/tech/h2.png"
+            },
+            "title_image": "./assets/images/other/rmd/RMD_0.png",
+            "images": [],
+            "link": "https://github.com/pparekh2009/remindly",
+            "category": "other"
         }
     ]
 }
